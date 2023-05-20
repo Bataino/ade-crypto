@@ -60,7 +60,7 @@ export default defineComponent({
 			<div class=" px-5 p-3 d-flex align-items-center justify-content-center px-2">
 				<div class="text-center">
 					<img alt="logo" class="rounded" width="100px" height="100px" src="/logo.jfif"><br>
-				</div>
+				</div> 
 				<div class="text-end w-100 ">
 					<div class="btn btn-primary bg-gradient float-right">
 						CONNECT WALLET
