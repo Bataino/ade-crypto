@@ -3,11 +3,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
     name: "StakingBox",
-    props: {
-        value: {
-            type: Object
-        }
-    },
+    props: ["value"],
 })
 </script>
 <template>

@@ -103,7 +103,7 @@ export default defineComponent({
 			</div>
 			<div class="row mx-auto bg-gradient py-4 _bg-secondary">
 				<div class="col-12 col-lg-6">
-					<div class="text-center py-5 h-100">
+					<div class="text-center py-5 mt-4 h-100">
 						<img alt="logo" class="rounded-circle" width="300" height="300" src="/logo.jfif"><br>
 						<div class="pt-5 pt-md-5 fs-5 fw-bold text-white">
 							Join us for more ARB token reward
@@ -129,14 +129,14 @@ export default defineComponent({
 		<div class="text-center p-4 pt-5 mt-4 bg-gradient bg-primary">
 			<img alt="logo" class="rounded-circle" width="300" height="300" src="/logo.jfif" />
 			<div class="mx-auto d-flex justify-content-center p-4">
-				<span class="rounded-circle bg-secondary p-3">
+				<a href="" class="rounded-circle bg-secondary p-3">
 					<icon icon="bi:twitter" class="fs-3 text-white">
 					</icon>
-				</span>
-				<span class="rounded-circle bg-secondary p-3 ms-5">
-					<icon icon="icon-park-outline:discord" class="fs-3 text-white">
+				</a>
+				<a href="" class="rounded-circle bg-secondary p-3 ms-5">
+					<icon icon="ic:round-discord" class="fs-3 text-white">
 					</icon>
-				</span>
+				</a>
 			</div>
 		</div>
 	</div>
