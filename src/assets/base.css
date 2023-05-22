@@ -1,4 +1,10 @@
 /* color palette from <https://github.com/vuejs/theme> */
+/* Edit Bootstrap */
+:root {
+  --bs-warning: #ff180e !important;
+  --bs-orange: #ff180e26 !important;
+  --bs-yellow: #ff180e26 !important;
+}
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -35,6 +41,7 @@
 
   --section-gap: 160px;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

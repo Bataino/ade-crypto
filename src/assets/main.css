@@ -1,9 +1,15 @@
-/* #app, body {
-    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
-
-} */
+#app, body {
+    background-image: linear-gradient(180deg, #271b3f 0%, #3ccb21 100%);
+}
+/* @import url('./base.css'); */
 body {
     max-height: 100vh !important;
+}
+.bg-primary, .btn-primary {
+    background-color: #271b3f !important;
+}
+.btn-warning, .bg-warning {
+    background-color: #3ccb21 !important;
 }
 #app {
     position: absolute !important;

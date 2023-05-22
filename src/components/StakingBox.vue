@@ -2,7 +2,12 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-    name: "StakingBox"
+    name: "StakingBox",
+    props: {
+        value: {
+            type: Object
+        }
+    },
 })
 </script>
 <template>
@@ -11,19 +16,19 @@ export default defineComponent({
             <div class="shadow-sm bg-gradient bg-warning text-white _border rounded mt-5 mt-md-0"
                 style="min-height: 200px;">
                 <div class="border-bottom p-3 fw-bold text-center">
-                    STATS FOR 25!NFT-600NFT HOLDERS
+                    STATS FOR {{ value.nftType }} HOLDERS
                 </div>
                 <div class="d-flex justify-content-between align-items-center h-100 p-3 px-4 fs-5">
                     <div class="text-center pt-4 my-auto">
                         STAKED NFT<br>
                         <span class="fw-bold">
-                            0
+                            {{ value.nftStake }}
                         </span>
                     </div>
                     <span class="text-center pt-4">
                         APY<br>
                         <span class="fw-bold">
-                            6000%
+                            {{ value.apy }}%
                         </span>
                     </span>
                 </div>
@@ -35,7 +40,7 @@ export default defineComponent({
                     MY NFT STAKE
                 </div>
                 <div class="text-center py-4 fs-4">
-                    0 NFT
+                    {{ value.myNft }} NFT
                 </div>
                 <div class="d-flex justify-content-between px-3 pb-3">
                     <span class=" btn btn-warning bg-gradient">
@@ -53,7 +58,7 @@ export default defineComponent({
                     MY REWARDS
                 </div>
                 <div class="text-center py-4 fs-4">
-                    0 ARB
+                    {{ value.myRewards }} ARB
                 </div>
                 <div class="px-3 pb-3 text-center d-flex justify-content-center">
                     <div class=" btn btn-warning bg-gradient">
