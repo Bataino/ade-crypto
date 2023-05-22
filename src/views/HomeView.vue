@@ -12,10 +12,73 @@ export default defineComponent({
 <template>
 	<div class="w-100">
 		<div class="">
+			<div class="sticky-top px-5 p-3 d-flex align-items-center justify-content-center px-2"
+				style="background-color: lightgray;">
+				<div class="text-center">
+					<img alt="logo" class="rounded" width="100px" height="100px" src="/logo.jfif"><br>
+				</div>
+				<div class="text-end w-100 ">
+					<div class="btn btn-primary bg-gradient float-right">
+						CONNECT WALLET
+					</div><br>
+					<small class="text-dark">
+						staking functionality goes live after public mint
+					</small>
+				</div>
+			</div>
+			<div class="row mx-auto bg-gradient py-4 _bg-secondary">
+				<div class="col-12 col-lg-6">
+					<div class="text-center py-5 mt-4 h-100">
+						<img alt="logo" class="rounded-circle" width="300" height="300" src="/logo.jfif"><br>
+						<div class="pt-5 pt-md-5 fs-5 fw-bold text-white">
+							Join us for more ARB token reward
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="p-3 px-3 px-md-5 fs-4 h-100 my-auto pt-3 pt-md-5 mt-md-5 text-start text-white">
+						The First Optimised NFT staking on Arbitrum that reward NFT stakers in ARB token with a Juicy APY,
+						where NFT and Staking meet to give a new use case to NFT
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<StakingBox :value='{
+			nftType: "1NFT - 250NFT",
+			nftStake: 0,
+			apy: "2,500",
+			myNft: 0,
+			myRewards: 0
+		}'>
+		</StakingBox>
+
+		<div class="py-5 mt-5"
+			style="background-color: whitesmoke;margin-top: 100px !important;background-image: url('https://img.freepik.com/free-vector/realistic-white-monochrome-background_23-2149023989.jpg?w=740&t=st=1684620748~exp=1684621348~hmac=f5a4c15d96a60e479460ba61a673add900ab44706a459f7d5262d919496e0020');">
+			<StakingBox :value='{
+				nftType: "251NFT - 600NFT",
+				nftStake: 0,
+				apy: 6000,
+				myNft: 0,
+				myRewards: 0
+			}'>
+			</StakingBox>
+			<StakingBox :value='{
+				nftType: "601NFT - 1000NFT",
+				nftStake: 0,
+				apy: "10,000",
+				myNft: 0,
+				myRewards: 0
+			}'>
+			</StakingBox>
+		</div>
+
+		<div class="">
 			<div style="" class="d-flex shadow-sm align-items-center bg-primary text-white p-3 p-md-4 py-3">
 				<img alt="logo" class="rounded" width="70" height="70" src="/logo.jfif">
 				<h4 class="ms-4 w-100 text-center">
-					About Atom NTF
+					About Atom NFT
 				</h4>
 			</div>
 			<div class="py-5 px-3 px-md-5" style="">
@@ -68,72 +131,16 @@ export default defineComponent({
 				</div>
 			</div>
 		</div>
-		<div class="py-5 mt-5"
-			style="background-color: whitesmoke;margin-top: 100px !important;background-image: url('https://img.freepik.com/free-vector/realistic-white-monochrome-background_23-2149023989.jpg?w=740&t=st=1684620748~exp=1684621348~hmac=f5a4c15d96a60e479460ba61a673add900ab44706a459f7d5262d919496e0020');">
-			<StakingBox :value='{
-				nftType: "251NFT - 600NFT",
-				nftStake: 0,
-				apy: 6000,
-				myNft: 0,
-				myRewards: 0
-			}'>
-			</StakingBox>
-			<StakingBox :value='{
-				nftType: "601NFT - 1000NFT",
-				nftStake: 0,
-				apy: "10,000",
-				myNft: 0,
-				myRewards: 0
-			}'>
-			</StakingBox>
-		</div>
-		<div class="">
-			<div class="px-5 p-3 d-flex align-items-center justify-content-center px-2" style="background-color: lightgray;">
-				<div class="text-center">
-					<img alt="logo" class="rounded" width="100px" height="100px" src="/logo.jfif"><br>
-				</div>
-				<div class="text-end w-100 ">
-					<div class="btn btn-primary bg-gradient float-right">
-						CONNECT WALLET
-					</div><br>
-					<small>
-						staking functionality goes live after public mint
-					</small>
-				</div>
-			</div>
-			<div class="row mx-auto bg-gradient py-4 _bg-secondary">
-				<div class="col-12 col-lg-6">
-					<div class="text-center py-5 mt-4 h-100">
-						<img alt="logo" class="rounded-circle" width="300" height="300" src="/logo.jfif"><br>
-						<div class="pt-5 pt-md-5 fs-5 fw-bold text-white">
-							Join us for more ARB token reward
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6">
-					<div class="p-3 px-3 px-md-5 fs-4 h-100 my-auto pt-3 pt-md-5 mt-md-5 text-start text-white">
-						The First Optimised NFT staking on Arbitrum that reward NFT stakers in ARB token with a Juicy APY,
-						where NFT and Staking meet to give a new use case to NFT
-					</div>
-				</div>
-			</div>
-		</div>
-		<StakingBox :value='{
-			nftType: "1NFT - 250NFT",
-			nftStake: 0,
-			apy: "2,500",
-			myNft: 0,
-			myRewards: 0
-		}'>
-		</StakingBox>
+
+
 		<div class="text-center p-4 pt-5 mt-4 bg-gradient bg-primary">
 			<img alt="logo" class="rounded-circle" width="300" height="300" src="/logo.jfif" />
 			<div class="mx-auto d-flex justify-content-center p-4">
-				<a href="" class="rounded-circle bg-secondary p-3">
+				<a href="https://twitter.com/atom_earnARB" class="rounded-circle bg-secondary p-3">
 					<icon icon="bi:twitter" class="fs-3 text-white">
 					</icon>
 				</a>
-				<a href="" class="rounded-circle bg-secondary p-3 ms-5">
+				<a href="https://discord.gg/rXWCPgr6ue" class="rounded-circle bg-secondary p-3 ms-5">
 					<icon icon="ic:round-discord" class="fs-3 text-white">
 					</icon>
 				</a>

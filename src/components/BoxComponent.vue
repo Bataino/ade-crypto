@@ -11,12 +11,12 @@ export default defineComponent({
 
 <template>
     <div class="p-4 px-md-5 mx-auto d-flex flex-wrap ">
-        <div class="d-flex w-100 fw-bold justify-content-between p-3 shadow bg-gradient bg-warning rounded">
-            <span>
+        <div class="d-flex w-100 justify-content-between fw-bold p-3 shadow bg-gradient bg-warning text-white rounded">
+            <span class="fw-bold">
                 {{ value.title }}
             </span>
-            <span>
-                100%
+            <span class="fw-bold">
+                {{ value.titlePercent }}
             </span>
         </div>
         <div style="line-height: 40px;" class="d-flex w-100 text-white justify-content-between mt-2">
