@@ -112,10 +112,10 @@ export default defineComponent({
 				<div class="row mx-auto w-100">
 					<div class="col-12 col-lg-6">
 						<BoxComponent :value='{
-							title: "Public Mint Funds",
+							title: "Public/Private Mint Funds",
 							titlePercent: "100%",
-							stakePool: "90%",
-							marketingPool: "10%"
+							stakePool: "95%",
+							marketingPool: "5%"
 						}' class="w-100">
 						</BoxComponent>
 					</div>
@@ -136,11 +136,11 @@ export default defineComponent({
 		<div class="text-center p-4 pt-5 mt-4 bg-gradient bg-primary">
 			<img alt="logo" class="rounded-circle" width="300" height="300" src="/logo.jfif" />
 			<div class="mx-auto d-flex justify-content-center p-4">
-				<a href="https://twitter.com/atom_earnARB" class="rounded-circle bg-secondary p-3">
+				<a href="https://twitter.com/atom_earnARB" class="rounded-circle bg-success p-3">
 					<icon icon="bi:twitter" class="fs-3 text-white">
 					</icon>
 				</a>
-				<a href="https://discord.gg/rXWCPgr6ue" class="rounded-circle bg-secondary p-3 ms-5">
+				<a href="https://discord.gg/rXWCPgr6ue" class="rounded-circle bg-success p-3 ms-5">
 					<icon icon="ic:round-discord" class="fs-3 text-white">
 					</icon>
 				</a>
