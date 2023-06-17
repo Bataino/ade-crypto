@@ -46,9 +46,9 @@ export default defineComponent({
 
 
 		<StakingBox :value='{
-			nftType: "1NFT - 250NFT",
+			nftType: "1NFT - 150NFT",
 			nftStake: 0,
-			apy: "2,500",
+			apy: "1,500",
 			myNft: 0,
 			myRewards: 0
 		}'>
@@ -57,17 +57,17 @@ export default defineComponent({
 		<div class="py-5 mt-5"
 			style="background-color: whitesmoke;margin-top: 100px !important;background-image: url('https://img.freepik.com/free-vector/realistic-white-monochrome-background_23-2149023989.jpg?w=740&t=st=1684620748~exp=1684621348~hmac=f5a4c15d96a60e479460ba61a673add900ab44706a459f7d5262d919496e0020');">
 			<StakingBox :value='{
-				nftType: "251NFT - 600NFT",
+				nftType: "151NFT - 300NFT",
 				nftStake: 0,
-				apy: 6000,
+				apy: 3000,
 				myNft: 0,
 				myRewards: 0
 			}'>
 			</StakingBox>
 			<StakingBox :value='{
-				nftType: "601NFT - 1000NFT",
+				nftType: "301NFT - 500NFT",
 				nftStake: 0,
-				apy: "10,000",
+				apy: "5000",
 				myNft: 0,
 				myRewards: 0
 			}'>
@@ -89,7 +89,7 @@ export default defineComponent({
 						That’s why we’re committed to create a welcoming NFT project welcoming all crypto
 						traders/investors
 						where
-						everyone can participate to mint Atom NFT as cheap as 0.0008eth($1.5)/NFT in our public mint
+						everyone can participate to mint Atom NFT as cheap as 0.0006eth($1)/NFT in our public mint
 						with a
 						fair
 						mint
